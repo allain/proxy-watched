@@ -1,10 +1,13 @@
 {
   "name": "proxy-watched",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A library for watching objects and being informed when any change is made no matter how deep.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "rollup -c",
