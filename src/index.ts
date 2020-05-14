@@ -1,4 +1,4 @@
-const arraymutators = [
+const arrayMutators = [
   'pop',
   'push',
   'reverse',
@@ -14,7 +14,7 @@ export default function proxyWatched (object: any, change: () => void) {
   proxy = new Proxy(object, {
     get (object, name) {
       // @ts-ignore
-      if (Array.isArray(object) && arraymutators.includes(name)) {
+      if (Array.isArray(object) && arrayMutators.includes(name)) {
         return (...args: any[]) => {
           // @ts-ignore
           const result = Array.prototype[name].apply(object, args)
